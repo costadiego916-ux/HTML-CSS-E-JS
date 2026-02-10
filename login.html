@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delicious - Login</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="imagens/logo.jpg">
+</head>
+<body>
+
+<div class="login-container">
+    <form class="login-box">
+        <h2>Pizza Delicious</h2>
+        <h3>Login</h3>
+
+        <input type="text" placeholder="Usuário" id="Login" required>
+        <input type="password" placeholder="Senha" id="senha" required>
+
+        <button type="submit" onclick="logar(); return false;">Entrar</button>
+    </form>
+</div>
+
+<script>
+function logar() {
+    var login = document.getElementById('Login').value;
+    var senha = document.getElementById('senha').value;
+
+    if (login === "pizzaria" && senha === "123") {
+        alert('Sucesso');
+        location.href = "index.html";
+    } else {
+        alert('Usuário ou senha incorretos');
+    }
+}
+</script>
+
+</body>
+</html>
